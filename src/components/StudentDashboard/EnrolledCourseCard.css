@@ -1,0 +1,46 @@
+.enrolled-course-card {
+    width: calc(33.33% - 20px); /* Adjust width based on the maximum of 3 cards in a row */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f9f9f9; /* Background color for the card */
+  }
+  
+  .enrolled-course-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0 0; /* Rounded corners for the top-left and top-right */
+  }
+  
+  .enrolled-course-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .enrolled-course-card p {
+    margin: 5px 0;
+  }
+  
+  .enrolled-course-card progress {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .enrolled-course-card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .enrolled-course-card button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  

@@ -1,0 +1,68 @@
+/* CourseListingPage.css */
+
+.container {
+  display: flex-box;
+}
+
+.search-bar {
+  float: right;
+  top: 0%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.course-listing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add some space between cards */
+}
+
+.course-card {
+  width: calc(33.33% - 20px); /* 3 cards in a row with a gap of 20px */
+  border: 1px solid #ddd; /* Add border for each card */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.course-card img {
+  width: 100%; /* Adjust image size to fit within card */
+  height: 200px; /* Set fixed height for consistency */
+  object-fit: cover; /* Cover image without stretching */
+  border-bottom: 1px solid #ddd; /* Add border at the bottom of the image */
+}
+
+.course-card-content {
+  padding: 20px; /* Add padding for content inside the card */
+}
+
+.course-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.course-card-instructor {
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    width: calc(50% - 20px); /* 2 cards in a row for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .course-card {
+    width: 100%; /* 1 card per row for extra small screens */
+  }
+}
