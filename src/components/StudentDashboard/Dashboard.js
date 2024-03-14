@@ -17,6 +17,7 @@ const Dashboard = () => {
   });
   const [displayedStudent, setDisplayedStudent] = useState(null);
   const courses = useSelector((state) => state.courses.courses);
+  const [course, setCourse] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
